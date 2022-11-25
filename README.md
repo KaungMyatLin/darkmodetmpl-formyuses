@@ -6,7 +6,7 @@
 
 ### This is a template repository hence you can use it to initialize a new project based on it.
 
-how to build a tailwindcss to 
+how to build a tailwind-lang.css to dist/tailwind.css to include in html.
 
 1. npx tailwindcss-cli build styles/css/*/tailwind.css -o build/dist/dest/precompile/*/tailwind.css
 

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import {useContext} from 'react'
-import MyThemeContext from '../../../store/myThemeContext'
+import MyThemeContext from '../../store/myThemeContext'
 
 export default function Header() {
     const themeCtx:{isDarkMode?: boolean; toggleThemeHandler: () => void } = useContext(MyThemeContext)
