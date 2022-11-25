@@ -1,6 +1,6 @@
 import Header from './Header'
 
-export default function MainLayout({children}: mainlayoutProps) {
+export default function MainLayout({children}: any) {
     return (
         <>
             <div className='min-h-screen
@@ -12,8 +12,4 @@ export default function MainLayout({children}: mainlayoutProps) {
             </div>
         </>
     )
-}
-
-type mainlayoutProps = {
-    children: React.ReactNode;
 }
