@@ -13,19 +13,19 @@ export function MyThemeContextProvider(props: ThemePropsInterface): ReactElement
     const [isDarkTheme, setIsDarkTheme ] = useState(false);
 
     useEffect(() => {
-      if (isLocalStorageNotEmpty()) {
-          const isDarkTheme: boolean = JSON.parse(localStorage.getItem("isDarkTheme")!);
-          isDarkTheme && document!.querySelector("body")!.classList.add(`dark`)
+        if (isLocalStorageNotEmpty()) {
+            const isDarkTheme: boolean = JSON.parse(localStorage.getItem("isDarkTheme")!);
+            isDarkTheme && document!.querySelector("body")!.classList.add(`dark`)
 
-          setIsDarkTheme(() => {
-            return isDarkTheme
-          })
-      }
-      else {
-          localStorage.setItem("isDarkTheme", `false`)
-          document!.querySelector("body")!.classList.remove(`dark`)
-          setIsDarkTheme(false)
-      }
+            setIsDarkTheme(() => {
+                return isDarkTheme
+            })
+        }
+        else {
+            localStorage.setItem("isDarkTheme", `false`)
+            document!.querySelector("body")!.classList.remove(`dark`)
+            setIsDarkTheme(false)
+        }
     });
 
     function isLocalStorageNotEmpty(): boolean {
@@ -33,15 +33,17 @@ export function MyThemeContextProvider(props: ThemePropsInterface): ReactElement
     }
 
     function toggleThemeHandler(): void {
-      const isDarkTheme: boolean = JSON.parse(localStorage.getItem("isDarkTheme")!)
-      setIsDarkTheme(!isDarkTheme)
-      document!.querySelector("body")!.classList.toggle("dark")
-      localStorage.setItem("isDarkTheme", `${!isDarkTheme}`)
+        const isDarkTheme: boolean = JSON.parse(localStorage.getItem("isDarkTheme")!)
+        setIsDarkTheme(!isDarkTheme)
+        document!.querySelector("body")!.classList.toggle("dark")
+        localStorage.setItem("isDarkTheme", `${!isDarkTheme}`)
     }
 
     return (
-        <MyThemeContext.Provider value={{isDarkTheme: true, togThemeHdl: toggleThemeHandler}}>
+        <MyThemeContext.Provider value={{isDarkTheme: false, togThemeHdl: toggleThemeHandler}}>
             {props.children}
         </MyThemeContext.Provider>
     )
 }
+
+export default MyThemeContext
