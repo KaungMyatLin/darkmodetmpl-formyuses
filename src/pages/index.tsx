@@ -26,7 +26,7 @@ const Home: NextPage = () => {
                 <button className="px-1 py-1 bg-zinc-800 text-gray-100 dark:bg-zinc-100 dark:text-gray-800 rounded
                 " type="button">
                   <span className="mr-2">GitHub Repository</span>
-                  <Image
+                  <Image className="white-filter dark:dark-filter"
                     src="/github.png"
                     alt="Github Logo"
                     width={20}
@@ -42,7 +42,7 @@ const Home: NextPage = () => {
               <button className="px-1 py-1 mx-2 bg-zinc-800 text-gray-100 dark:bg-zinc-100 dark:text-gray-800 rounded
               " type="button">
                 <span className="mr-2">Medium article</span>
-                <Image className=""
+                <Image className="white-filter dark:dark-filter"
                 src="/medium.png"
                 alt=""
                 width={20}
