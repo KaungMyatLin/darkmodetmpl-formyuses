@@ -1,7 +1,7 @@
 1. npx create-next-app
 2. cd
 3. npm install -d tailwindcss postcss autoprefixer
-4. npx tailwindcss init -p
+4. npx tailwindcss init tailwind-full.config.js --full -p (npx tailwindcss init -h)
 5. npm run dev
 
 ### This is a template repository hence you can use it to initialize a new project based on it.
