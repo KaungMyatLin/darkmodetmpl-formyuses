@@ -1,3 +1,5 @@
+##  how to start building proj like this?
+
 1. npx create-next-app
 2. cd
 3. npm install -d tailwindcss postcss autoprefixer
@@ -6,7 +8,9 @@
 
 ### This is a template repository hence you can use it to initialize a new project based on it.
 
-how to build a tailwind-lang.css to dist/tailwind.css to include in html.
+##  how to build a tailwind-lang.css to dist/tailwind.css to include in html.
 
 1. npx tailwindcss-cli build styles/css/*/tailwind.css -o build/dist/dest/precompile/*/tailwind.css
 
+##  alternative nextjs configwith tailwind by npx-cli is 
+##  npx create-next-app --example  with-tailwindcss.

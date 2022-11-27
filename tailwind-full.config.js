@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+// const colors = require('tailwindcss/colors') path:nmodules\tailwindcss\types\generated\colors.d.ts
 module.exports = {
   content: [],
   presets: [],
